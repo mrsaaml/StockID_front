@@ -1,0 +1,402 @@
+{
+  "nav": {
+    "how": "How it works",
+    "forWhom": "Who it's for",
+    "why": "Benefits",
+    "login": "Sign in",
+    "register": "Get started"
+  },
+  "hero": {
+    "badge": "AI livestock identification · Kyrgyzstan",
+    "title": "A digital passport for every animal",
+    "subtitle": "StockID identifies cattle by facial biometrics. Register animals, verify them for insurance claims, and keep their history safe.",
+    "cta_register": "Register an animal",
+    "cta_verify": "Verify animal"
+  },
+  "problems": {
+    "badge": "The Problem",
+    "title": "Why digital identification matters",
+    "subtitle": "Without a tracking system, proving ownership, preventing fraud, and preserving animal history is nearly impossible.",
+    "theft": {
+      "title": "Livestock theft",
+      "desc": "Without digital animal identity, it's nearly impossible to prove ownership or recover stolen livestock."
+    },
+    "fraud": {
+      "title": "Insurance fraud",
+      "desc": "One animal gets insured with multiple companies, or a different animal is presented when filing a claim."
+    },
+    "paper": {
+      "title": "Paper-based records",
+      "desc": "Most livestock data is stored in paper ledgers — easily lost, falsified, or destroyed."
+    },
+    "noRegistry": {
+      "title": "Lost history",
+      "desc": "When an animal changes ownership, its entire history — vaccines, records, documents — is lost permanently."
+    }
+  },
+  "how": {
+    "badge": "How it works",
+    "title": "Verification in 4 steps",
+    "subtitle": "Every cow has a unique muzzle pattern — like a human fingerprint. StockID analyzes it and creates a biometric digital ID.",
+    "step1": {
+      "title": "Take a photo",
+      "desc": "Photograph the animal's muzzle from the front using any smartphone. No special equipment needed."
+    },
+    "step2": {
+      "title": "AI analysis",
+      "desc": "The neural network extracts biometric features and generates a unique digital identity signature."
+    },
+    "step3": {
+      "title": "Digital passport",
+      "desc": "An animal profile is created: breed, owner, vaccination history, insurance details."
+    },
+    "step4": {
+      "title": "Verification",
+      "desc": "Any new photo is matched against the database in seconds — the system confirms the animal's identity."
+    }
+  },
+  "forWhom": {
+    "title": "Who StockID is for",
+    "subtitle": "The platform helps farmers, insurers, and vet services work with animal data.",
+    "farmers": {
+      "title": "Farmers",
+      "items": [
+        "Digital proof of animal ownership",
+        "Easier insurance enrollment",
+        "Protection against theft and substitution",
+        "Veterinary treatment history"
+      ]
+    },
+    "insurance": {
+      "title": "Insurance companies",
+      "items": [
+        "Verify animal authenticity at enrollment",
+        "Prevent double-insurance schemes",
+        "Biometric confirmation at claim submission",
+        "Reduce fraudulent payouts"
+      ]
+    },
+    "gov": {
+      "title": "Veterinary services",
+      "items": [
+        "Digital vaccination records",
+        "Track animal movement",
+        "Monitor disease outbreaks",
+        "Digital records instead of paper ledgers"
+      ]
+    }
+  },
+  "trust": {
+    "title": "Why users trust us",
+    "secure": {
+      "title": "Data security",
+      "desc": "Biometric data is stored encrypted. Access is strictly controlled."
+    },
+    "transparent": {
+      "title": "Transparency",
+      "desc": "Full animal history is accessible to the owner, insurer, and vet."
+    },
+    "fast": {
+      "title": "Speed",
+      "desc": "Verification takes seconds. Registering a new animal takes under 3 minutes."
+    },
+    "official": {
+      "title": "Simplicity",
+      "desc": "All you need is a smartphone with a camera. No special devices or training required."
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": "How does animal registration work?",
+    "a1": "You photograph the animal's muzzle, fill in details (breed, age, owner, insurance) and submit. The AI generates a biometric profile in seconds.",
+    "q2": "What is verification and when is it needed?",
+    "a2": "Verification matches a new photo against an existing registered profile. Used during insurance claims, animal sales, or ownership transfers.",
+    "q3": "Is special equipment required?",
+    "a3": "No. Any smartphone with a camera works. The system processes photos from 2 MP and above.",
+    "q4": "How accurate is AI identification?",
+    "a4": "Recognition accuracy in testing exceeds 95%. When confidence is low, the system requests additional photos.",
+    "q5": "How is my data protected?",
+    "a5": "Data is stored on secure encrypted servers. Biometric data is never shared with third parties without your consent."
+  },
+  "cta": {
+    "title": "Start protecting your animals",
+    "subtitle": "Registration takes 3 minutes. Data is stored securely.",
+    "primary": "Create an account",
+    "secondary": "Sign in"
+  },
+  "footer": {
+    "tagline": "AI livestock identification for insurance",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "howWorks": "How it works",
+    "forFarmers": "For farmers",
+    "forInsurance": "For insurers",
+    "about": "About us",
+    "contacts": "Contact",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "copyright": "© 2024 StockID.",
+    "madeIn": "Built in Kyrgyzstan"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your account",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create account",
+    "invalidCredentials": "Invalid email or password",
+    "demoAccounts": "Test accounts:",
+    "registerTitle": "Create account",
+    "registerSubtitle": "Join StockID",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "companyName": "Company name",
+    "region": "Region",
+    "phone": "Phone",
+    "confirmPassword": "Confirm password",
+    "passwordMin": "Min. 6 characters",
+    "repeatPassword": "Repeat password",
+    "passwordMismatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "creating": "Creating account…",
+    "alreadyAccount": "Already have an account?",
+    "signInLink": "Sign in",
+    "roleFarmer": "Farmer / Livestock Owner",
+    "roleFarmerDesc": "Register and manage your animals",
+    "roleInsurance": "Insurance Company",
+    "roleInsuranceDesc": "Verify animals and manage claims",
+    "selectRegion": "Select region",
+    "sideTitle": "Digital livestock identification platform",
+    "sideDesc": "Biometric animal verification for farmers and insurance companies. Fast, reliable, paperless.",
+    "whyUse": "Why use StockID",
+    "benefit1": "Digital passport for every animal",
+    "benefit2": "Verification in seconds by photo",
+    "benefit3": "Protection against insurance fraud",
+    "benefit4": "Full history: vaccines, owners, status"
+  },
+  "dashboard": {
+    "greeting": "Good afternoon",
+    "subtitle": "Your animals and recent activity.",
+    "registerAnimal": "Add animal",
+    "registerAnimalDesc": "Create digital passport",
+    "verifyAnimal": "Verify",
+    "verifyAnimalDesc": "Identify by photo",
+    "totalAnimals": "Animals",
+    "verifiedAnimals": "Verified",
+    "pendingAnimals": "Pending",
+    "verifications": "Verifications",
+    "recentActivity": "Recent activity",
+    "recentActivityDesc": "Registrations and verifications",
+    "viewAll": "All records",
+    "account": "Account",
+    "role": "Role",
+    "regionLabel": "Region",
+    "memberSince": "Member since",
+    "noActivity": "No activity yet.",
+    "registerFirst": "Add your first animal",
+    "animalRegistered": "Animal added",
+    "verificationPassed": "Verification passed",
+    "verificationFailed": "Verification failed",
+    "unknownAnimal": "Unknown animal",
+    "onboarding_title": "Get started with StockID",
+    "onboarding_subtitle": "Complete a few simple steps",
+    "step_add": "Add an animal",
+    "step_add_desc": "Upload a photo and fill in details",
+    "step_verify": "Run verification",
+    "step_verify_desc": "AI biometric check in seconds",
+    "step_insure": "Apply for insurance",
+    "step_insure_desc": "Data ready for your insurer",
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening"
+  },
+  "animals": {
+    "title": "My animals",
+    "subtitle_zero": "No animals yet",
+    "subtitle": "{{count}} animals",
+    "register": "Add animal",
+    "searchPlaceholder": "Search by name or breed…",
+    "filter": "Filter",
+    "animal": "Animal",
+    "breed": "Breed",
+    "status": "Status",
+    "registered": "Added",
+    "actions": "Actions",
+    "noAnimals": "No animals yet",
+    "noAnimalsDesc": "Add your first animal to get started",
+    "noSearchResults": "No matches found",
+    "noSearchResultsDesc": "Try a different search term",
+    "loading": "Loading…",
+    "deleteConfirm": "Delete this animal?",
+    "deleteError": "Failed to delete. "
+  },
+  "registerAnimal": {
+    "title": "Add animal",
+    "subtitle": "Create a digital passport with AI biometrics",
+    "animalInfo": "Animal details",
+    "ownerInsurance": "Owner & insurance",
+    "photos": "Biometric photo",
+    "photosDesc": "Upload a clear frontal photo of the muzzle",
+    "namePlaceholder": "e.g. Zolushka",
+    "nameLabel": "Name *",
+    "breedLabel": "Breed",
+    "selectBreed": "Select breed",
+    "ageLabel": "Age (years)",
+    "birthYearLabel": "Birth year",
+    "regionLabel": "Region",
+    "vaccinationLabel": "Vaccination status",
+    "ownerLabel": "Owner name",
+    "ownerPlaceholder": "Nurlan Bakytbekov",
+    "insuranceLabel": "Insurance company",
+    "insuranceNone": "Not insured",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Additional information…",
+    "dropPhotos": "Drag & drop photo here",
+    "dropHere": "Drop to upload",
+    "browseFiles": "or click to browse — JPG, PNG up to 10MB",
+    "photoTips": "Photo guidelines",
+    "tip1": "Clear frontal view of the muzzle",
+    "tip2": "Good lighting, no blur",
+    "tip3": "Minimum 1 photo, up to 3",
+    "errorName": "Please enter an animal name",
+    "errorPhoto": "Please upload at least one photo",
+    "submit": "Register animal",
+    "submitting": "Saving…",
+    "successTitle": "Animal added",
+    "successSubtitle": "Digital passport created",
+    "registerAnother": "Add another",
+    "selectVaccination": "Select status"
+  },
+  "verify": {
+    "title": "Verify animal",
+    "subtitle": "Upload a photo for AI biometric identification",
+    "uploadPrompt": "Select photo",
+    "uploading": "Uploading…",
+    "scanning": "Analyzing biometrics…",
+    "identityVerified": "Animal found",
+    "verificationFailed": "No match",
+    "confirmedInRegistry": "Animal found in the database",
+    "notFoundInRegistry": "No matching animal found",
+    "matchScore": "Match score",
+    "animalData": "Animal data",
+    "reset": "New check",
+    "tips": "Photo guidelines",
+    "tip1": "Frontal view of muzzle",
+    "tip2": "Clear, no blur",
+    "tip3": "At least 800×600 pixels",
+    "tip4": "Good lighting"
+  },
+  "history": {
+    "title": "History",
+    "subtitle": "Verifications and checks",
+    "total": "Total",
+    "successful": "Successful",
+    "failed": "Failed",
+    "searchPlaceholder": "Search by animal name…",
+    "animal": "Animal",
+    "result": "Result",
+    "score": "Score",
+    "date": "Date",
+    "verified": "Found",
+    "notVerified": "Not found",
+    "noHistory": "No history yet",
+    "noHistoryDesc": "Verifications will appear here after the first check",
+    "loading": "Loading…",
+    "noSearchResults": "Nothing found"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Profile and account preferences",
+    "profile": "Profile",
+    "notifications": "Notifications",
+    "security": "Security",
+    "language": "Language",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "region": "Region",
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "emailNotif": "Email notifications for verifications",
+    "fraudAlerts": "Suspicious verification alerts",
+    "weeklyReport": "Weekly activity digest",
+    "changePassword": "Change password",
+    "twoFactor": "Two-factor authentication",
+    "comingSoon": "Coming soon",
+    "chooseLanguage": "Interface language",
+    "russian": "Русский",
+    "english": "English"
+  },
+  "admin": {
+    "title": "Admin panel",
+    "subtitle": "Users and system data",
+    "totalUsers": "Users",
+    "farmers": "Farmers",
+    "insurers": "Insurers",
+    "totalAnimals": "Animals",
+    "users": "Users",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "region": "Region",
+    "registered": "Registered",
+    "noUsers": "No users yet",
+    "loading": "Loading…"
+  },
+  "passport": {
+    "title": "Digital Animal Passport",
+    "ministry": "StockID",
+    "kyrgyzRepublic": "Kyrgyzstan",
+    "verified": "✓ Verified",
+    "pending": "Pending",
+    "breed": "Breed",
+    "birthYear": "Birth year",
+    "age": "Age",
+    "region": "Region",
+    "years": "years",
+    "owner": "Owner",
+    "insurance": "Insurance",
+    "vaccination": "Vaccination",
+    "biometricId": "Biometric ID",
+    "registeredAt": "Added",
+    "blockchain": "Record hash",
+    "notSpecified": "Not specified",
+    "notInsured": "Not insured"
+  },
+  "sidebar": {
+    "main": "Navigation",
+    "admin": "Management",
+    "dashboard": "Home",
+    "myAnimals": "My animals",
+    "registerAnimal": "Add animal",
+    "verify": "Verify",
+    "history": "History",
+    "settings": "Settings",
+    "adminPanel": "Admin",
+    "livestock": "StockID",
+    "signOut": "Sign out"
+  },
+  "status": {
+    "verified": "Verified",
+    "pending": "Pending"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "or": "or"
+  }
+}
