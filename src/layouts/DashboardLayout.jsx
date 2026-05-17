@@ -112,11 +112,11 @@ export default function DashboardLayout() {
 
   return (
     <div className="flex h-screen bg-slate-50 overflow-hidden">
-      {/* Desktop Sidebar */}
+      {/* Desktop Sidebar — изменено md на lg */}
       <motion.aside
         animate={{ width: collapsed ? 72 : 256 }}
         transition={{ duration: 0.2, ease: 'easeInOut' }}
-        className="hidden md:flex flex-col bg-white border-r border-slate-100 flex-shrink-0 overflow-hidden"
+        className="hidden lg:flex flex-col bg-white border-r border-slate-100 flex-shrink-0 overflow-hidden"
         style={{ minHeight: '100vh' }}
       >
         <div className="w-full h-full flex flex-col" style={{ minWidth: collapsed ? 72 : 256 }}>
@@ -147,10 +147,12 @@ export default function DashboardLayout() {
       {/* Main */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         <header className="flex-shrink-0 h-14 bg-white border-b border-slate-100 flex items-center px-4 md:px-6 gap-4">
-          <button onClick={() => setMobileOpen(true)} className="md:hidden p-1.5 rounded-lg hover:bg-slate-100 text-slate-600">
+          {/* Кнопка Menu — изменено md:hidden на lg:hidden */}
+          <button onClick={() => setMobileOpen(true)} className="lg:hidden p-1.5 rounded-lg hover:bg-slate-100 text-slate-600">
             <Menu size={20} />
           </button>
-          <button onClick={() => setCollapsed(!collapsed)} className="hidden md:flex p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors">
+          {/* Кнопка collapse — изменено hidden md:flex на hidden lg:flex */}
+          <button onClick={() => setCollapsed(!collapsed)} className="hidden lg:flex p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors">
             {collapsed ? <ChevronRight size={18} /> : <Menu size={18} />}
           </button>
 
