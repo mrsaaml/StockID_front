@@ -112,7 +112,7 @@ export default function DashboardLayout() {
 
   return (
     <div className="flex h-screen bg-slate-50 overflow-hidden">
-      {/* Desktop Sidebar */}
+      {/* Desktop Sidebar — показывается только на lg и выше */}
       <motion.aside
         animate={{ width: collapsed ? 72 : 256 }}
         transition={{ duration: 0.2, ease: 'easeInOut' }}
@@ -124,19 +124,19 @@ export default function DashboardLayout() {
         </div>
       </motion.aside>
 
-      {/* Mobile Sidebar */}
+      {/* Mobile Sidebar — overlay и сайдбар без md:hidden, чтобы работали на всех экранах */}
       <AnimatePresence>
         {mobileOpen && (
           <>
             <motion.div
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/40 z-40"
+              className="fixed inset-0 bg-black/40 z-40"  // Убрали md:hidden
               onClick={() => setMobileOpen(false)}
             />
             <motion.aside
               initial={{ x: -280 }} animate={{ x: 0 }} exit={{ x: -280 }}
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="fixed left-0 top-0 bottom-0 w-64 bg-white z-50 flex flex-col"
+              className="fixed left-0 top-0 bottom-0 w-64 bg-white z-50 flex flex-col"  // Убрали md:hidden
             >
               <SidebarContent mobile />
             </motion.aside>
@@ -147,9 +147,11 @@ export default function DashboardLayout() {
       {/* Main */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         <header className="flex-shrink-0 h-14 bg-white border-b border-slate-100 flex items-center px-4 md:px-6 gap-4">
+          {/* Кнопка Menu — показывается только на экранах меньше lg */}
           <button onClick={() => setMobileOpen(true)} className="lg:hidden p-1.5 rounded-lg hover:bg-slate-100 text-slate-600">
             <Menu size={20} />
           </button>
+          {/* Кнопка collapse — показывается только на lg и выше */}
           <button onClick={() => setCollapsed(!collapsed)} className="hidden lg:flex p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors">
             {collapsed ? <ChevronRight size={18} /> : <Menu size={18} />}
           </button>
