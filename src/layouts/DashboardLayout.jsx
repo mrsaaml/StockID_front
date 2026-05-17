@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   LayoutDashboard, PlusCircle, ScanFace, History,
   Settings, ShieldCheck, ChevronRight, LogOut, Bell,
-  Menu, X, ChevronDown, Beef
+  Menu, ChevronDown, Beef
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { useTranslation } from '../hooks/useI18n'
@@ -20,6 +20,8 @@ export default function DashboardLayout() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [userMenuOpen, setUserMenuOpen] = useState(false)
   const location = useLocation()
+
+  const isMobile = window.innerWidth < 1024
 
   const navItems = [
     { path: '/dashboard', label: t('sidebar.dashboard'), icon: LayoutDashboard },
@@ -112,31 +114,33 @@ export default function DashboardLayout() {
 
   return (
     <div className="flex h-screen bg-slate-50 overflow-hidden">
-      {/* Desktop Sidebar — показывается только на lg и выше */}
-      <motion.aside
-        animate={{ width: collapsed ? 72 : 256 }}
-        transition={{ duration: 0.2, ease: 'easeInOut' }}
-        className="hidden lg:flex flex-col bg-white border-r border-slate-100 flex-shrink-0 overflow-hidden"
-        style={{ minHeight: '100vh' }}
-      >
-        <div className="w-full h-full flex flex-col" style={{ minWidth: collapsed ? 72 : 256 }}>
-          <SidebarContent />
-        </div>
-      </motion.aside>
+      {/* Desktop Sidebar — только для экранов >= 1024px */}
+      {!isMobile && (
+        <motion.aside
+          animate={{ width: collapsed ? 72 : 256 }}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
+          className="flex flex-col bg-white border-r border-slate-100 flex-shrink-0 overflow-hidden"
+          style={{ minHeight: '100vh' }}
+        >
+          <div className="w-full h-full flex flex-col" style={{ minWidth: collapsed ? 72 : 256 }}>
+            <SidebarContent />
+          </div>
+        </motion.aside>
+      )}
 
-      {/* Mobile Sidebar — overlay и сайдбар без md:hidden, чтобы работали на всех экранах */}
+      {/* Mobile Sidebar */}
       <AnimatePresence>
         {mobileOpen && (
           <>
             <motion.div
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/40 z-40"  // Убрали md:hidden
+              className="fixed inset-0 bg-black/40 z-40"
               onClick={() => setMobileOpen(false)}
             />
             <motion.aside
               initial={{ x: -280 }} animate={{ x: 0 }} exit={{ x: -280 }}
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="fixed left-0 top-0 bottom-0 w-64 bg-white z-50 flex flex-col"  // Убрали md:hidden
+              className="fixed left-0 top-0 bottom-0 w-64 bg-white z-50 flex flex-col"
             >
               <SidebarContent mobile />
             </motion.aside>
@@ -147,14 +151,16 @@ export default function DashboardLayout() {
       {/* Main */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         <header className="flex-shrink-0 h-14 bg-white border-b border-slate-100 flex items-center px-4 md:px-6 gap-4">
-          {/* Кнопка Menu — показывается только на экранах меньше lg */}
-          <button onClick={() => setMobileOpen(true)} className="lg:hidden p-1.5 rounded-lg hover:bg-slate-100 text-slate-600">
-            <Menu size={20} />
-          </button>
-          {/* Кнопка collapse — показывается только на lg и выше */}
-          <button onClick={() => setCollapsed(!collapsed)} className="hidden lg:flex p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors">
-            {collapsed ? <ChevronRight size={18} /> : <Menu size={18} />}
-          </button>
+          {isMobile && (
+            <button onClick={() => setMobileOpen(true)} className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-600">
+              <Menu size={20} />
+            </button>
+          )}
+          {!isMobile && (
+            <button onClick={() => setCollapsed(!collapsed)} className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors">
+              {collapsed ? <ChevronRight size={18} /> : <Menu size={18} />}
+            </button>
+          )}
 
           <div className="flex-1" />
 
